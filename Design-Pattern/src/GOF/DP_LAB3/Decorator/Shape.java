@@ -3,21 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GOF.DP_LAB4.Chain_of_Responsibility.DispenserNoteExamples;
+package GOF.DP_LAB3.Decorator;
 
 /**
  *
  * @author FA20-BSE-068
  */
-public class Currency {
-	int amount;
-
-	public Currency(int amount) {
-		this.amount = amount;
-	}
-
-	public int getAmount() {
-		return amount;
-	}
-	
+public interface Shape {
+   void draw();
+   double getPrice();
 }

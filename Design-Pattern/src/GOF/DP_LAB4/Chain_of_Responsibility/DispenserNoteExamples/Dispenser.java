@@ -9,6 +9,7 @@ package GOF.DP_LAB4.Chain_of_Responsibility.DispenserNoteExamples;
  *
  * @author FA20-BSE-068
  */
-public class Dispenser {
-    
+public interface Dispenser {
+	void setNext(Dispenser next);
+	void dispense(Currency ammount);
 }
