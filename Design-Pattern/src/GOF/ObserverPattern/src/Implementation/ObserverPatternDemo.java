@@ -7,7 +7,7 @@ package Implementation;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public class ObserverPatternDemo {
    public static void main(String[] args) {
