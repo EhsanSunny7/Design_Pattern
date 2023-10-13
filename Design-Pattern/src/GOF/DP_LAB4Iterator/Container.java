@@ -7,7 +7,7 @@ package GOF.Iterator;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public interface Container {
    public Iterator getIterator();
