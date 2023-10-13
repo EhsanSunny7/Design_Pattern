@@ -10,10 +10,14 @@ package GOF.DP_LAB3.Decorator;
  * @author FA20-BSE-068
  */
 public class Circle implements Shape {
-    private double price;
+    private final double price;
     
     public Circle(double price){
         this.price = price;
+    }
+
+    Circle() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

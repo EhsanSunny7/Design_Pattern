@@ -11,13 +11,17 @@ package GOF.DP_LAB3.Decorator;
  */
 public abstract class ShapeDecorator implements Shape {
    protected Shape decoratedShape;
-   private double price;
+   private final double price;
 
     public ShapeDecorator(Shape decoratedShape, double price){
       this.decoratedShape = decoratedShape;
       this.price = price;
     }    
 
+    /**
+     *
+     */
+    @Override
     public void draw(){
         double totalCost = computeCost();
         decoratedShape.draw();
