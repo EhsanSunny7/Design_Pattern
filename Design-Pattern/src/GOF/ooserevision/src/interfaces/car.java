@@ -7,7 +7,7 @@ package interfaces;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 interface  car {
 public  void  tyres();
