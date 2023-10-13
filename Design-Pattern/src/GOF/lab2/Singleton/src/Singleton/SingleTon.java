@@ -7,7 +7,7 @@ package Singleton;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 class Singleton {
 
