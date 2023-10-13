@@ -7,7 +7,7 @@ package Inheritance;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public class employee {
     float salary = 45000;
