@@ -7,7 +7,7 @@ package Encapsulation;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 class  plane  {
 private String name;
