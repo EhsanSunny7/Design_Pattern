@@ -7,7 +7,7 @@ package abstraction;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 abstract class animal {
 abstract void run();
