@@ -6,7 +6,7 @@ package GOF.Visitor;
 
 /**
  *
- * @author shafq
+ * 
  */
 public class Student {
     
