@@ -7,7 +7,7 @@ package Mediator;
 
 /**
  *
- * @author fa20-bse-044
+ * @author fa20-bse-068
  */
 public interface AbstractUser {
     
