@@ -8,7 +8,7 @@ package GOF.Mediator;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public interface AbstractUser {
     public void sendMessage(String message);
