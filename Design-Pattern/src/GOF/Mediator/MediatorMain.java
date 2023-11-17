@@ -10,7 +10,6 @@ package GOF.Mediator;
  *
  * @author FA20-BSE-068
  */
-import java.util.ArrayList;
 import java.util.List;
 
 public class MediatorMain {

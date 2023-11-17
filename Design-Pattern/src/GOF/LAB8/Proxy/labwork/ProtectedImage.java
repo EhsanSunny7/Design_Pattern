@@ -3,21 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package GOF.Mediator;
+package GOF.LAB8.Proxy.labwork;
 
 /**
  *
  * @author FA20-BSE-068
  */
-public class University {
+public class ProtectedImage {
 
-    University(String comsats_University) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ProtectedImage() {
     }
 
-    University(String nust) {
+    void display(String imageType) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
 }
