@@ -7,7 +7,7 @@ package GOF.StructuralPattern.Composite.TutorialPointExample;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public class CompositePatternDemo {
    public static void main(String[] args) {
