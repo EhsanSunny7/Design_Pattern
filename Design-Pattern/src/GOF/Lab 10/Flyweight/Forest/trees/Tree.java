@@ -7,7 +7,7 @@ package GOF.DP_Lab10.Flyweight.Forest.trees;
 
 /**
  *
- * @author fa20-bse-017
+ * @author fa20-bse-068
  */
 
 import java.awt.*;
