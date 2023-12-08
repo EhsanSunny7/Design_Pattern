@@ -7,7 +7,7 @@ package GOF.DP_Lab10.State.MediaPlayer.UI;
 
 /**
  *
- * @author fa20-bse-017
+ * @author fa20-bse-068
  */
 
 
