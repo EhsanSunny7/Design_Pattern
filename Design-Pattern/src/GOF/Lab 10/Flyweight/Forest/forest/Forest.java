@@ -7,7 +7,7 @@ package GOF.DP_Lab10.Flyweight.Forest.forest;
 
 /**
  *
- * @author fa20-bse-017
+ * @author fa20-bse-068
  */
 import GOF.DP_Lab10.Flyweight.Forest.trees.Tree;
 import GOF.DP_Lab10.Flyweight.Forest.trees.TreeFactory;
