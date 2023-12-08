@@ -7,7 +7,7 @@ package GOF.DP_Lab10.State.MediaPlayer;
 
 /**
  *
- * @author fa20-bse-017
+ * @author fa20-bse-068
  */
 import GOF.DP_Lab10.State.MediaPlayer.States.*;
 import GOF.DP_Lab10.State.MediaPlayer.UI.*;
