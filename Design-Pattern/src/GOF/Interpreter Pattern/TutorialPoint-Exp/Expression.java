@@ -7,7 +7,7 @@ package GOF.BehavioralPattern.Interpreter.TutorialPointExample;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public interface Expression {
    public boolean interpret(String context);
