@@ -9,11 +9,7 @@
  *
  * @author FA20-BSE-068
  */
-import GOF.StructuralPattern.Bridge.RFExample.devices.Device;
-import GOF.StructuralPattern.Bridge.RFExample.devices.Radio;
-import GOF.StructuralPattern.Bridge.RFExample.devices.Tv;
-import GOF.StructuralPattern.Bridge.RFExample.remotes.AdvancedRemote;
-import GOF.StructuralPattern.Bridge.RFExample.remotes.BasicRemote;
+
 
 public class Demo {
     public static void main(String[] args) {
