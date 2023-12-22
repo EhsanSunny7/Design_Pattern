@@ -7,7 +7,7 @@ package GOF.StructuralPattern.Bridge.RFExample.devices;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 
 public interface Device {
