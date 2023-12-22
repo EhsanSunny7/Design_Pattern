@@ -9,7 +9,7 @@
  *
  * @author FA20-BSE-068
  */
-import GOF.StructuralPattern.Bridge.RFExample.devices.Device;
+
 
 public class AdvancedRemote extends BasicRemote {
 
