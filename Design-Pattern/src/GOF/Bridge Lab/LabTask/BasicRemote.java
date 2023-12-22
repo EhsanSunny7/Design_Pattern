@@ -7,7 +7,7 @@ package GOF.StructuralPattern.Bridge.LabTask.remotes;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 import GOF.StructuralPattern.Bridge.LabTask.devices.Device;
 
