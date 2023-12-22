@@ -10,7 +10,7 @@ import java.awt.Graphics;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public class Oval extends BaseShape {
      private int width;
