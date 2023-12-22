@@ -7,7 +7,7 @@ package GOF.BehavioralPattern.Memento.LabTask.history;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 import GOF.BehavioralPattern.Memento.LabTask.commands.Command;
 
