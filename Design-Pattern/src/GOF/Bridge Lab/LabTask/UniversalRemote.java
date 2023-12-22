@@ -10,7 +10,7 @@ import GOF.StructuralPattern.Bridge.LabTask.devices.Device;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 public class UniversalRemote extends BasicRemote {
 
