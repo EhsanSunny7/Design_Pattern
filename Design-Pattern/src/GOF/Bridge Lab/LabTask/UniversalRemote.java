@@ -3,9 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GOF.StructuralPattern.Bridge.LabTask.remotes;
-
-import GOF.StructuralPattern.Bridge.LabTask.devices.Device;
 
 
 /**
