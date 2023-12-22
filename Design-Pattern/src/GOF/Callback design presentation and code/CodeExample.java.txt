@@ -1,0 +1,239 @@
+interface Callback {
+    void onSuccess(String result);
+    void onFail(Exception exception);
+}
+
+// Class that performs a task asynchronously
+class TaskPerformer {
+    public void performTask(Callback callback) {
+        new Thread(() -> {
+            try {
+                // Simulate a task that takes 2 seconds
+                Thread.sleep(2000);
+                String result = "Task completed successfully!";
+                callback.onSuccess(result);
+            } catch (Exception exception) {
+                callback.onFail(exception);
+            }
+        }).start();
+    }
+}
+
+// Client class that uses the TaskPerformer
+public class CallbackExample {
+    public static void main(String[] args) {
+        TaskPerformer taskPerformer = new TaskPerformer();
+
+        taskPerformer.performTask(new Callback() {
+            @Override
+            public void onSuccess(String result) {
+                System.out.println(result);
+            }
+
+            @Override
+            public void onFail(Exception exception) {
+                System.out.println("Task failed: " + exception.getMessage());
+            }
+        });
+
+        // Continue doing other things while the task is running
+        System.out.println("Continuing with other tasks...");
+    }
+}
+Use code with caution. Learn more
+Explanation:
+
+Callback Interface:
+
+Defines the methods that will be called when the task is either successful or fails.
+In this example, it has onSuccess and onFail methods.
+TaskPerformer Class:
+
+Represents the object that performs the task asynchronously.
+Its performTask method takes a Callback object as an argument.
+It starts a new thread to simulate a task that takes time.
+Upon completion or failure, it calls the appropriate method on the Callback object.
+Client Class:
+
+Creates a TaskPerformer object.
+Provides an implementation of the Callback interface to handle the task's result.
+Passes the Callback object to the performTask method.
+Continues with other tasks while the task is running asynchronously.
+Asynchronous Execution:
+
+The task is executed in a separate thread, allowing the main thread to continue.
+The callback methods are invoked when the task is done, regardless of when that happens.
+Key Points:
+
+The callback pattern decouples the task execution from the result handling.
+It's useful for asynchronous operations and event-driven programming.
+It promotes loose coupling and better code organization.
+profile picture
+also with main method so i can run it in ide
+I've already included the main method in the code I provided:
+
+Java
+// ... (rest of the code remains the same)
+
+public class CallbackExample {
+    public static void main(String[] args) {
+        // ... (code using the TaskPerformer)
+    }
+}
+Use code with caution. Learn more
+Here's how you can run it in your IDE:
+
+Create a new Java project:
+
+Open your IDE (e.g., IntelliJ IDEA, Eclipse, NetBeans).
+Create a new Java project.
+Paste the code:
+
+Create a new Java class named CallbackExample.
+Paste the provided code into this class.
+Run the main method:
+
+Right-click on the CallbackExample class.
+Select "Run" or "Run As" -> "Java Application" (the specific option may vary depending on your IDE).
+Output:
+
+You should see the following output in the console:
+
+Continuing with other tasks...
+Task completed successfully!
+Explanation:
+
+The main method is the entry point of the program.
+It creates a TaskPerformer object and starts the asynchronous task.
+The Continuing with other tasks... message is printed immediately, demonstrating that the main thread doesn't block while the task is running.
+After 2 seconds (simulated task time), the onSuccess method is called, printing Task completed successfully!.
+profile picture
+give one more example..
+Here's another example, demonstrating a simple notification system:
+
+Java
+interface NotificationListener {
+    void onNotificationReceived(String message);
+}
+
+class NotificationManager {
+    private List<NotificationListener> listeners = new ArrayList<>();
+
+    public void subscribe(NotificationListener listener) {
+        listeners.add(listener);
+    }
+
+    public void sendNotification(String message) {
+        for (NotificationListener listener : listeners) {
+            listener.onNotificationReceived(message);
+        }
+    }
+}
+
+public class CallbackExample2 {
+    public static void main(String[] args) {
+        NotificationManager manager = new NotificationManager();
+
+        manager.subscribe(new NotificationListener() {
+            @Override
+            public void onNotificationReceived(String message) {
+                System.out.println("Received notification: " + message);
+            }
+        });
+
+        manager.subscribe(new NotificationListener() {
+            @Override
+            public void onNotificationReceived(String message) {
+                System.out.println("Another listener received: " + message);
+            }
+        });
+
+        manager.sendNotification("Hello, world!");
+    }
+}
+Use code with caution. Learn more
+Explanation:
+
+NotificationListener: Interface for objects that want to receive notifications.
+NotificationManager: Manages listeners and sends notifications.
+subscribe(): Adds a listener to the list.
+sendNotification(): Iterates through listeners and calls their onNotificationReceived() method.
+main(): Demonstrates usage with multiple listeners.
+Output: Prints both listeners' responses to the notification.
+Key Points:
+
+Callback pattern enables loose coupling between notification sender and receivers.
+Multiple listeners can subscribe to the same event.
+Useful for event-driven systems and decoupled communication.
+profile picture
+/ Interface for the callback
+interface Callback {
+    void onSuccess(String result);
+    void onFail(Exception exception);
+}
+
+// Class that performs a task asynchronously
+class TaskPerformer {
+    public void performTask(Callback callback) {
+        new Thread(() -> {
+            try {
+                // Simulate a task that takes 2 seconds
+                Thread.sleep(2000);
+                String result = "Task completed successfully!";
+                callback.onSuccess(result);
+            } catch (Exception exception) {
+                callback.onFail(exception);
+            }
+        }).start();
+    }
+}
+
+// Client class that uses the TaskPerformer
+public class CallbackExample {
+    public static void main(String[] args) {
+        TaskPerformer taskPerformer = new TaskPerformer();
+
+        taskPerformer.performTask(new Callback() {
+            @Override
+            public void onSuccess(String result) {
+                System.out.println(result);
+            }
+
+            @Override
+            public void onFail(Exception exception) {
+                System.out.println("Task failed: " + exception.getMessage());
+            }
+        });
+
+        // Continue doing other things while the task is running
+        System.out.println("Continuing with other tasks...");
+    }
+}
+
+explain all this code line by line
+Here's a line-by-line explanation of the code:
+
+1. Callback Interface:
+
+interface Callback { ... }: Defines a contract for objects that want to be notified of task completion or failure.
+void onSuccess(String result);: Specifies a method to be called when the task is successful, providing the result as a string.
+void onFail(Exception exception);: Specifies a method to be called when the task fails, providing the exception that caused the failure.
+2. TaskPerformer Class:
+
+class TaskPerformer { ... }: Represents an object that performs a task asynchronously.
+public void performTask(Callback callback) { ... }: Takes a Callback object as an argument and starts the task asynchronously.
+new Thread(() -> { ... }).start();: Creates a new thread to execute the task.
+try { ... } catch (Exception exception) { ... }: Handles potential exceptions that might occur during the task.
+Thread.sleep(2000);: Simulates a task that takes 2 seconds to complete.
+String result = "Task completed successfully!";: Prepares a success message.
+callback.onSuccess(result);: Calls the onSuccess method of the provided Callback object, passing the success message.
+callback.onFail(exception);: Calls the onFail method of the Callback object if an exception occurs.
+3. Client Class:
+
+public class CallbackExample { ... }: Represents the main class that uses TaskPerformer.
+public static void main(String[] args) { ... }: The entry point of the program.
+TaskPerformer taskPerformer = new TaskPerformer();: Creates a new TaskPerformer object.
+taskPerformer.performTask(new Callback() { ... });: Calls the performTask method, passing an anonymous implementation of the Callback interface to handle the results.
+@Override public void onSuccess(String result) { ... }: Overrides the onSuccess method to print the success message.
+@Override public void onFail(Exception exception) { ... }: Overrides the onFail method to print an error message if the task fails.
+System.out.println("Continuing with other tasks...");: Prints a message to demonstrate that the main thread continues while the task runs asynchronously.
