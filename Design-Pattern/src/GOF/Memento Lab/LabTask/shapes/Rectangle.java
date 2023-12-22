@@ -7,7 +7,7 @@ package GOF.BehavioralPattern.Memento.LabTask.shapes;
 
 /**
  *
- * @author FA20-BSE-042
+ * @author FA20-BSE-068
  */
 import java.awt.*;
 
